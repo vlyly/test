@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0"/>
+        <link rel="stylesheet" href="test.css"/>
+        <title>접근성 테스트</title>
+    </head>
+    <body>
+        <button type="button" class="btn_test" aria-label="test button">테스트할거지롱</button>
+        <ul class="tablist1" role="tablist">
+            <li id="tab1-1" role="none presentation" aria-controls="tabpanel1"><a href="#">메뉴1</a></li>
+            <li role="none presentation"><a href="#">메뉴2</a></li>
+            <li role="none presentation"><a href="#">메뉴3</a></li>
+            <li role="none presentation"><a href="#">메뉴4</a></li>
+        </ul>
+        <ul class="tablist2" role="tablist">
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+        </ul>
+        <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1-1">
+            <img style="width:500px" src="https://ifh.cc/g/qlVlY8.png" alt=""/>
+        </div>
+    </body>
+</html>
