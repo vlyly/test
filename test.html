@@ -9,8 +9,8 @@
     <body>
         <button type="button" class="btn_test" aria-label="test button">테스트할거지롱</button>
         <ul class="tablist1" role="tablist">
-            <li id="tab1-1" role="none presentation" aria-controls="tabpanel1"><a href="#">메뉴1</a></li>
-            <li role="none presentation"><a href="#" role="tab">메뉴2</a></li>
+            <li id="tab1-1" role="none presentation"><a href="#" role="tab">메뉴1</a></li>
+            <li role="none presentation"><a href="#" aria-controls="tabpanel1" role="tab">메뉴2</a></li>
             <li role="none presentation"><a href="#" role="tab">메뉴3</a></li>
             <li role="none presentation"><a href="#" role="tab">메뉴4</a></li>
         </ul>
@@ -22,6 +22,7 @@
         </ul>
         <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1-1" tabindex="-1">
             <img style="width:500px" src="https://ifh.cc/g/qlVlY8.png" alt=""/>
+            <span>혜택 발급 및 등급 달성 Comm.</span>
         </div>
     </body>
 </html>
