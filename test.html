@@ -1,28 +1,48 @@
-<!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width = device-width, initial-scale = 1.0"/>
-        <link rel="stylesheet" href="test.css"/>
-        <title>접근성 테스트</title>
-    </head>
-    <body>
-        <button type="button" class="btn_test" aria-label="test button">테스트할거지롱</button>
-        <ul class="tablist1" role="tablist">
-            <li id="tab1-1" role="none presentation"><a href="#" role="tab">메뉴1</a></li>
-            <li role="none presentation"><a href="#" aria-controls="tabpanel1" role="tab">메뉴2</a></li>
-            <li role="none presentation"><a href="#" role="tab">메뉴3</a></li>
-            <li role="none presentation"><a href="#" role="tab">메뉴4</a></li>
-        </ul>
-        <ul class="tablist2" role="tablist">
-            <li><a href="#" role="tab">메뉴1</a></li>
-            <li><a href="#" role="tab">메뉴2</a></li>
-            <li><a href="#" role="tab">메뉴3</a></li>
-            <li><a href="#" role="tab">메뉴4</a></li>
-        </ul>
-        <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1-1" tabindex="-1">
-            <img style="width:500px" src="https://ifh.cc/g/qlVlY8.png" alt=""/>
-<!--             <span>혜택 발급 및 등급 달성 Comm.</span> -->
-        </div>
-    </body>
-</html>
+<div class="box">
+  <strong>&lt;ul role="tablist"&gt;&lt;li&gt;</strong>
+  <ul role="tablist">
+    <li><button type="button" role="tab">복숭아</button></li>
+    <li><button type="button" role="tab">사과</button></li>
+    <li><button type="button" role="tab">오렌지</button></li>
+    <li><button type="button" role="tab">레몬</button></li>
+    <li><button type="button" role="tab">메론</button></li>
+  </ul>
+</div>
+<div class="box">
+  <strong>&lt;ul role="tablist"&gt;&lt;li role="none presentation"&gt;</strong>
+  <ul role="tablist">
+    <li role="none presentation"><button type="button" role="tab">복숭아</button></li>
+    <li role="none presentation"><button type="button" role="tab">사과</button></li>
+    <li role="none presentation"><button type="button" role="tab">오렌지</button></li>
+    <li role="none presentation"><button type="button" role="tab">레몬</button></li>
+    <li role="none presentation"><button type="button" role="tab">메론</button></li>
+  </ul>
+</div>
+<div class="box">
+  <strong>&lt;ul role="listbox"&gt;&lt;li&gt;</strong>
+  <ul role="listbox">
+    <li><button type="button" role="option">복숭아</button></li>
+    <li><button type="button" role="option">사과</button></li>
+    <li><button type="button" role="option">오렌지</button></li>
+    <li><button type="button" role="option">레몬</button></li>
+    <li><button type="button" role="option">메론</button></li>
+  </ul>
+</div>
+<div class="box">
+  <strong>&lt;ul role="listbox"&gt;&lt;li role="none presentation"&gt;</strong>
+  <ul role="listbox">
+    <li role="none presentation"><button type="button" role="option">복숭아</button></li>
+    <li role="none presentation"><button type="button" role="option">사과</button></li>
+    <li role="none presentation"><button type="button" role="option">오렌지</button></li>
+    <li role="none presentation"><button type="button" role="option">레몬</button></li>
+    <li role="none presentation"><button type="button" role="option">메론</button></li>
+  </ul>
+</div>
+<div class="box">
+  <strong>&lt;button role="combobox"&gt;</strong>
+  <button type="button" role="combobox" aria-expanded="false">only aria-expanded</button>
+</div>
+<div class="box">
+  <strong>&lt;button role="combobox"&gt;</strong>
+  <button type="button" role="combobox" aria-haspopup="listbox" aria-expanded="false">aria both</button>
+</div>
