@@ -183,6 +183,9 @@ img{
 
 .layer_wrap .layer_filter .body_layer .filter_detail_wrap {
     height: 23.3rem;
+    padding: 1.6rem;
+    font-size: 2.4rem;
+    box-sizing: border-box;
 }
 
 .layer_wrap .layer_filter .footer_layer {
